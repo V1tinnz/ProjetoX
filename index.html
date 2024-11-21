@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <title>Em Busca da Ilha Perdida</title>
+</head>
+<body>
+    <main>
+        <div class="passo ativo" id="passo-0">
+            <img src="img/cenario-passo0.png" alt="Imagem inicial da aventura">
+            <p>Você, um jovem explorador, descobre um antigo mapa em um livro raro na biblioteca da cidade. O mapa promete levar até uma ilha esquecida, onde dizem existir tesouros e segredos do passado. A aventura começa agora!</p>
+            <button class="btn-proximo" data-proximo="1">Seguir para o arquipélago tropical</button>
+            <button class="btn-proximo" data-proximo="2">Ir para a selva amazônica</button>
+        </div>
+        <div class="passo" id="passo-1">
+            <p>Você parte rumo ao arquipélago tropical. Após dias de viagem, você chega a uma ilha misteriosa. O mapa indica que o tesouro está escondido em uma caverna secreta, mas a entrada está bloqueada por uma densa vegetação.</p>
+            <button class="btn-proximo" data-proximo="3">Cortar a vegetação e tentar abrir caminho</button>
+            <button class="btn-proximo" data-proximo="4">Explorar a praia e procurar pistas adicionais</button>
+        </div>
+        <div class="passo" id="passo-2">
+            <p>Você decide explorar a selva amazônica. Entre árvores gigantescas e animais selvagens, você encontra uma aldeia indígena. Os nativos falam sobre uma força ancestral que protege o tesouro perdido. Como você reagirá?</p>
+            <button class="btn-proximo" data-proximo="5">Tentar negociar com os nativos</button>
+            <button class="btn-proximo" data-proximo="6">Ignorar os nativos e seguir sozinho pela selva</button>
+        </div>
+        <div class="passo" id="passo-3">
+            <p>Após muita luta contra a vegetação densa, você consegue abrir caminho e encontra a entrada da caverna. No entanto, ao entrar, você se depara com uma série de armadilhas antigas. Precisa ser cuidadoso.</p>
+            <button class="btn-proximo" data-proximo="7">Desarmar as armadilhas e continuar explorando</button>
+            <button class="btn-proximo" data-proximo="8">Voltar e procurar outra entrada</button>
+        </div>
+
+        <div class="passo" id="passo-4">
+            <img src="img/cenario-passo4-praia.png" alt="Imagem da praia deserta">
+            <p>Você explora a praia e encontra um mapa parcialmente destruído, mas ainda legível. Ele indica uma caverna secreta nas montanhas. Você decide seguir para lá, mas a jornada será mais difícil. Prepare-se.</p>
+            <button class="btn-proximo" data-proximo="9">Seguir para as montanhas em busca da caverna secreta</button>
+        </div>
+
+        <div class="passo" id="passo-5">
+            <p>Os nativos, cautelosos, finalmente concordam em ajudá-lo. Eles lhe entregam um amuleto que se diz capaz de abrir portais secretos. Com o amuleto em mãos, você segue em direção ao templo escondido, onde o tesouro aguarda.</p>
+            <button class="btn-proximo" data-proximo="7">Entrar no templo secreto com o amuleto</button>
+        </div>
+
+        <div class="passo" id="passo-6">
+            <p>Você decide seguir sozinho pela selva, ignorando os nativos. Após dias de dificuldades e encontros com animais selvagens, você encontra uma entrada oculta para uma caverna profunda. Você sente que está perto de algo grande!</p>
+            <button class="btn-proximo" data-proximo="7">Entrar na caverna e procurar pelo tesouro</button>
+        </div>
+
+        <div class="passo" id="passo-7">
+            <p>Dentro da caverna, você encontra um tesouro incrível, mas uma força mágica antiga começa a se manifestar. Você deve decidir entre tomar o tesouro e arriscar sua vida ou preservar o segredo da ilha e retornar para casa.</p>
+            <button class="btn-proximo" data-proximo="10">Pegar o tesouro e desafiar a força mágica</button>
+            <button class="btn-proximo" data-proximo="11">Deixar o tesouro e retornar para casa com o conhecimento</button>
+        </div>
+
+        <div class="passo" id="passo-8">
+            <p>Você decide voltar e procurar outra entrada. Porém, após dias de busca, o clima da ilha se torna mais hostil, e você percebe que pode ter perdido a chance de encontrar o tesouro perdido.</p>
+            <button class="btn-proximo" data-proximo="12">Explorar a selva em busca de outra pista</button>
+        </div>
+
+        <div class="passo" id="passo-9">
+            <p>Você chega à caverna secreta nas montanhas e entra com cautela. Lá dentro, descobre que o tesouro está guardado por um enigma ancestral. Você deve resolver o enigma para avançar.</p>
+            <button class="btn-proximo" data-proximo="10">Tentar resolver o enigma</button>
+        </div>
+
+        <div class="passo" id="passo-10">
+            <p>Ao pegar o tesouro, você ativa uma armadilha mágica que começa a destruir a caverna. Com coragem, você corre para fora, mas o tesouro se perde nas profundezas. Sua jornada não é em vão, porém, pois você leva consigo o conhecimento dos segredos da ilha.</p>
+            <button class="btn-proximo" data-proximo="11">Retornar para casa e compartilhar sua história</button>
+        </div>
+
+        <div class="passo" id="passo-11">
+            <img src="img/cenario-passo11-tesouro.png" alt="Imagem do tesouro perdido encontrado">
+            <p>Com o tesouro em mãos, você retorna para casa, mas a experiência deixa uma marca profunda. Você decide se dedicar a estudar as forças mágicas da ilha, garantindo que o segredo permaneça protegido.</p>
+        </div>
+
+        <div class="passo" id="passo-12">
+            <p>Após muitas aventuras, você retorna à selva, agora com mais conhecimento e mais recursos. O que você descobrirá na próxima jornada?</p>
+            <button class="btn-proximo" data-proximo="11">Seguir para novas aventuras</button>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
